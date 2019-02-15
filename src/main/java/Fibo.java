@@ -18,10 +18,10 @@ public class Fibo implements Iterable<BigInteger> {
             @Override
             public BigInteger next() {
                 BigInteger retVal = null;
-                if (st.compareTo(BigInteger.ZERO) == 0) {
+                if(st.compareTo(BigInteger.ZERO) == 0){
                     prev1 = BigInteger.ONE;
                     retVal = prev1;
-                } else if (st.compareTo(BigInteger.ONE) == 0) {
+                } else if(st.compareTo(BigInteger.ONE) == 0){
                     prev2 = BigInteger.ONE;
                     retVal = prev2;
                 } else {
