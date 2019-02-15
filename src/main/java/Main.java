@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,10 +9,11 @@ public class Main {
         organization.add("K1\\SK1\\SSK1");
         organization.add("K1\\SK1\\SSK2");
         organization.add("K2");
+        organization.add("K2\\SK1");
         organization.add("K2\\SK1\\SSK1");
         organization.add("K2\\SK1\\SSK2");
 
-        organization.printAll(true);
+        organization.printAll(false);
     }
 
 }
