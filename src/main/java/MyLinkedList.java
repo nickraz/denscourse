@@ -8,8 +8,7 @@ public class MyLinkedList<E> {
     }
 
     public E poll(){
-        Node<E> node = getNode(0);
-        return node.date;
+        return pop();
     }
 
     public E pop(){
