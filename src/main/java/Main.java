@@ -1,17 +1,25 @@
 public class Main {
 
     public static void main(String[] args) {
-        Organization organization = new Organization();
-        organization.add("K1\\SK1");
-        organization.add("K1\\SK2");
-        organization.add("K1\\SK1\\SSK1");
-        organization.add("K1\\SK1\\SSK2");
-        organization.add("K2");
-        organization.add("K2\\SK1");
-        organization.add("K2\\SK1\\SSK1");
-        organization.add("K2\\SK1\\SSK2");
+        MyLinkedList<Integer> linkedList = new MyLinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.push(4);
 
-        organization.printAll(false);
+        System.out.println("linkedList size = " + linkedList.getSize());
+        for (int i = 0; i < linkedList.getSize(); i++) {
+            System.out.println(linkedList.get(i));
+        }
+
+        System.out.println("pop = " + linkedList.pop());
+
+        System.out.println("linkedList size = " + linkedList.getSize());
+        for (int i = 0; i < linkedList.getSize(); i++) {
+            System.out.println(linkedList.get(i));
+        }
+
+        System.out.println("poll " + linkedList.poll());
     }
 
 }
