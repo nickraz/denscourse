@@ -7,6 +7,29 @@ public class MyLinkedList<E> {
         return size;
     }
 
+    public E dequeue(){
+        if(size == 0){
+            throw new IndexOutOfBoundsException();
+        }
+        Node<E> node = getNode(size - 1);
+        E result = node.date;
+        if(size == 1){
+            first = null;
+        } else {
+            node.prev.next = null;
+        }
+        size--;
+        return result;
+    }
+
+    public void enqueue(E val){
+        add(val);
+    }
+
+    public void offer(E val){
+        add(val);
+    }
+
     public E poll(){
         return pop();
     }
