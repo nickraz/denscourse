@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 public class LinkedListTest {
     LinkedList<Integer> linkedList = new LinkedList<>();
-    MyLinkedList<Integer> myLinkedList = new MyLinkedList();
+    MyLinkedList myLinkedList = new MyLinkedList();
 
     @Before
     public void init() {
